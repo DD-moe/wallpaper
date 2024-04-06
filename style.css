@@ -3,7 +3,7 @@
     height: auto;
     margin: 5px;
     display: block; /* Display images in a row */
-    object-fit: cover;
+    object-fit: contain;
     min-width: 100vw;
 }
 
@@ -19,6 +19,6 @@
     color: white;
     border: none;
     cursor: pointer;
-    width: 50vw; /* Set width to 20% of viewport width */
-    height: 25vh;
+    width: 50%; /* Set width to 20% of viewport width */
+    height: 25%;
 }
