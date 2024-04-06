@@ -1,6 +1,6 @@
 .gallery img {
-    max-width: 100%; /* Set maximum width to prevent images from extending viewport */
-    width: 100%;
+    max-width: 100vh; /* Set maximum width to prevent images from extending viewport */
+    width: 100vh;
     height: auto;
     margin: 5px;
     display: block; /* Display images in a row */
