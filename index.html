@@ -14,12 +14,14 @@
   <button id="loadMoreBtn">Load More</button>
 
   <script>
+    // Global variable to store loaded images data
+    let imagesData = [];
+
     document.addEventListener('DOMContentLoaded', () => {
       const gallery = document.getElementById('gallery');
       const loadMoreBtn = document.getElementById('loadMoreBtn');
-      let imagesData = []; // Array to store loaded images data
 
-      // Function to fetch and load images from XML
+      // Function to fetch and populate imagesData array from XML
       function loadImagesFromXML() {
         // Replace 'your-xml-url' with the actual URL of your XML file
         fetch('config.xml')
@@ -38,9 +40,6 @@
               const category = photos[i].getElementsByTagName('category')[0].textContent;
               imagesData.push({ src, orientation, category });
             }
-
-            // Load initial images
-            loadRandomImages();
           })
           .catch(error => console.error('Error loading XML:', error));
       }
@@ -63,7 +62,7 @@
         return array.sort(() => Math.random() - 0.5);
       }
 
-      // Load images when the page loads
+      // Load images from XML when the page loads
       loadImagesFromXML();
 
       // Load new random images when clicking the button
