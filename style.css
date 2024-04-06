@@ -1,5 +1,5 @@
 .gallery img {
-    width: 100vw; /* Set image width to viewport width */
+    width: 100%; /* Set image width to viewport width */
     height: auto;
     margin: 5px;
     display: block; /* Display images in a row */
@@ -14,4 +14,5 @@
     border: none;
     cursor: pointer;
     width: 20vw; /* Set width to 20% of viewport width */
+    height: 10vh;
 }
