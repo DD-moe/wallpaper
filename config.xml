@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gallery>
   <photo>
-    <source>plants/a.jpg</source>
+    <source>photos/plants/a.jpg</source>
     <orientation>portrait</orientation>
     <category>plants</category>
   </photo>
   <photo>
-    <source>plants/b.jpg</source>
+    <source>photos/plants/b.jpg</source>
     <orientation>portrait</orientation>
     <category>plants</category>
   </photo>
   <photo>
-    <source>plants/c.jpg</source>
+    <source>photos/plants/c.jpg</source>
     <orientation>portrait</orientation>
     <category>plants</category>
   </photo>  
   <photo>
-    <source>plants/d.jpg</source>
+    <source>photos/plants/d.jpg</source>
     <orientation>landscape</orientation>
     <category>plants</category>
   </photo>  
   <photo>
-    <source>plants/e.jpg</source>
+    <source>photos/plants/e.jpg</source>
     <orientation>landscape</orientation>
     <category>plants</category>
   </photo>  
   <photo>
-    <source>plants/f.jpg</source>
+    <source>photos/plants/f.jpg</source>
     <orientation>portrait</orientation>
     <category>plants</category>
   </photo> 
   <photo>
-    <source>animals/a.jpg</source>
+    <source>photos/animals/a.jpg</source>
     <orientation>landscape</orientation>
     <category>animals</category>
   </photo>   
   <photo>
-    <source>animals/b.jpg</source>
+    <source>photos/animals/b.jpg</source>
     <orientation>landscape</orientation>
     <category>animals</category>
   </photo>   
