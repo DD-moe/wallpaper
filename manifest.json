@@ -1,0 +1,24 @@
+{
+    "name": "Macro-Photo wallpaper",
+    "short_name": "M-wall",
+    "description": "shows random photos from my collection, can download them and use as wallpaper.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff", 
+    "theme_color": "#3498db", 
+    "icons": [
+      {
+        "src": "icon_32.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      },
+      {
+        "src": "icon_192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "scope": "/",
+    "orientation": "any"
+  }
+  
