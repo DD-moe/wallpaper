@@ -57,6 +57,16 @@
           imgElement.alt = 'Wallpaper';
           gallery.appendChild(imgElement);
         }
+
+        scrollToTop();
+      }
+
+      // function scroll to top
+      function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Use smooth scrolling behavior if supported by the browser
+        });
       }
 
       // Shuffle array function
