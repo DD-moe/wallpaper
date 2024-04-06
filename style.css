@@ -1,0 +1,21 @@
+    /* Add your CSS styles here */
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .gallery img {
+        width: 100vw;
+        height: auto;
+        object-fit: cover;
+        margin: 5px;
+      }
+      #loadMoreBtn {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
