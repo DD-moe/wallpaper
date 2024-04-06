@@ -1,5 +1,6 @@
 /* Add your CSS styles here */
 .gallery {
+    /* should be */
     overflow-x: auto; /* Enable horizontal scrolling */
     white-space: nowrap; /* Prevent images from wrapping */
 }
@@ -7,7 +8,6 @@
 .gallery img {
     width: 100vw; /* Set image width to viewport width */
     height: auto;
-    object-fit: cover;
     margin: 5px;
     display: inline-block; /* Display images in a row */
 }
