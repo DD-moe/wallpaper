@@ -1,8 +1,8 @@
 /* Add your CSS styles here */
 .gallery {
-    /* should be */
     overflow-x: auto; /* Enable horizontal scrolling */
     white-space: nowrap; /* Prevent images from wrapping */
+    text-align: center; /* Center images horizontally */
 }
 
 .gallery img {
