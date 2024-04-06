@@ -43,7 +43,7 @@
       // Function to fetch and load images from XML
       function loadImagesFromXML() {
         // Replace 'your-xml-url' with the actual URL of your XML file
-        fetch('your-xml-url')
+        fetch('./config.xml')
           .then(response => response.text())
           .then(data => {
             const parser = new DOMParser();
