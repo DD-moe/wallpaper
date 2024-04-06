@@ -1,10 +1,9 @@
 .gallery img {
-    width: 100vh; /* Set image width to viewport width */
+    width: 100%; /* Set image width to viewport width */
     height: auto;
     margin: 5px;
     display: block; /* Display images in a row */
-    object-fit: contain;
-    min-width: 100vw;
+    min-width: 100%;
 }
 
 .gallery{
