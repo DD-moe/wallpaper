@@ -1,21 +1,36 @@
-    /* Add your CSS styles here */
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      .gallery img {
-        width: 100vw;
-        height: auto;
-        object-fit: cover;
-        margin: 5px;
-      }
-      #loadMoreBtn {
-        display: block;
-        margin: 20px auto;
-        padding: 10px 20px;
-        background-color: #3498db;
-        color: white;
-        border: none;
-        cursor: pointer;
-      }
+/* Add your CSS styles here */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 5px;
+}
+
+@media (min-width: 768px) {
+    .gallery img {
+        width: calc(50% - 10px); /* Two images per row with 5px margin on each side */
+    }
+}
+
+@media (min-width: 1200px) {
+    .gallery img {
+        width: calc(33.3333% - 10px); /* Three images per row with 5px margin on each side */
+    }
+}
+
+#loadMoreBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 20vw; /* Set width to 20% of viewport width */
+}
