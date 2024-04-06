@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallpaper Gallery</title>
+  <style>
+    /* Add your CSS styles here */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 5px;
+    }
+    #loadMoreBtn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery" id="gallery">
+    <!-- Images will be dynamically added here -->
+  </div>
+  <button id="loadMoreBtn">Load More</button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const gallery = document.getElementById('gallery');
+      const loadMoreBtn = document.getElementById('loadMoreBtn');
+      let imagesData = []; // Array to store loaded images data
+
+      // Function to fetch and load images from XML
+      function loadImagesFromXML() {
+        // Replace 'your-xml-url' with the actual URL of your XML file
+        fetch('your-xml-url')
+          .then(response => response.text())
+          .then(data => {
+            const parser = new DOMParser();
+            const xml = parser.parseFromString(data, 'application/xml');
+            const photos = xml.getElementsByTagName('photo');
+
+            // Clear previous images data
+            imagesData = [];
+
+            for (let i = 0; i < photos.length; i++) {
+              const src = photos[i].getElementsByTagName('source')[0].textContent;
+              const orientation = photos[i].getElementsByTagName('orientation')[0].textContent;
+              const category = photos[i].getElementsByTagName('category')[0].textContent;
+              imagesData.push({ src, orientation, category });
+            }
+
+            // Load initial images
+            loadRandomImages();
+          })
+          .catch(error => console.error('Error loading XML:', error));
+      }
+
+      // Function to load random images from imagesData
+      function loadRandomImages() {
+        const shuffledImages = shuffle(imagesData).slice(0, 5); // Pick 5 random images
+        gallery.innerHTML = ''; // Clear previous images
+
+        for (const image of shuffledImages) {
+          const imgElement = document.createElement('img');
+          imgElement.src = image.src;
+          imgElement.alt = 'Wallpaper';
+          gallery.appendChild(imgElement);
+        }
+      }
+
+      // Shuffle array function
+      function shuffle(array) {
+        return array.sort(() => Math.random() - 0.5);
+      }
+
+      // Load images when the page loads
+      loadImagesFromXML();
+
+      // Load new random images when clicking the button
+      loadMoreBtn.addEventListener('click', loadRandomImages);
+    });
+  </script>
+</body>
+</html>
