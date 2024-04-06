@@ -40,6 +40,8 @@
               const category = photos[i].getElementsByTagName('category')[0].textContent;
               imagesData.push({ src, orientation, category });
             }
+
+            loadRandomImages();
           })
           .catch(error => console.error('Error loading XML:', error));
       }

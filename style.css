@@ -1,10 +1,10 @@
 .gallery img {
-    width: 50vh; /* Set image width to viewport width */
+    width: 100vh; /* Set image width to viewport width */
     height: auto;
     margin: 5px;
     display: block; /* Display images in a row */
     object-fit: contain;
-    min-width: 50vw;
+    min-width: 100vw;
 }
 
 .gallery{
@@ -20,5 +20,5 @@
     border: none;
     cursor: pointer;
     width: 50%; /* Set width to 20% of viewport width */
-    height: 25%;
+    font-size: 3em;
 }
