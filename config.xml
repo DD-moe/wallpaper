@@ -29,7 +29,57 @@
     <source>photos/plants/f.jpg</source>
     <orientation>portrait</orientation>
     <category>plants</category>
+  </photo>
+  <photo>
+    <source>photos/plants/g.jpg</source>
+    <orientation>portrait</orientation>
+    <category>plants</category>
   </photo> 
+  <photo>
+    <source>photos/plants/h.jpg</source>
+    <orientation>portrait</orientation>
+    <category>plants</category>
+  </photo> 
+  <photo>
+    <source>photos/plants/i.jpg</source>
+    <orientation>portrait</orientation>
+    <category>plants</category>
+  </photo> 
+  <photo>
+    <source>photos/plants/j.jpg</source>
+    <orientation>portrait</orientation>
+    <category>plants</category>
+  </photo> 
+  <photo>
+    <source>photos/plants/k.jpg</source>
+    <orientation>portrait</orientation>
+    <category>plants</category>
+  </photo> 
+  <photo>
+    <source>photos/plants/l.jpg</source>
+    <orientation>portrait</orientation>
+    <category>plants</category>
+  </photo> 
+  <photo>
+    <source>photos/plants/m.jpg</source>
+    <orientation>portrait</orientation>
+    <category>plants</category>
+  </photo>     
+  <photo>
+    <source>photos/plants/n.jpg</source>
+    <orientation>portrait</orientation>
+    <category>plants</category>
+  </photo>   
+  <photo>
+    <source>photos/plants/o.jpg</source>
+    <orientation>portrait</orientation>
+    <category>plants</category>
+  </photo> 
+  <photo>
+    <source>photos/plants/p.jpg</source>
+    <orientation>portrait</orientation>
+    <category>plants</category>
+  </photo>   
   <photo>
     <source>photos/animals/a.jpg</source>
     <orientation>landscape</orientation>
