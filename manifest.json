@@ -2,7 +2,7 @@
     "name": "Macro-Photo wallpaper",
     "short_name": "M-wall",
     "description": "shows random photos from my collection, can download them and use as wallpaper.",
-    "start_url": "/wallpaper/index.html",
+    "start_url": "https://git.1ioe.top/wallpaper/index.html",
     "display": "standalone",
     "background_color": "#ffffff", 
     "theme_color": "#3498db", 
