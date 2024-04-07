@@ -1,5 +1,5 @@
 .gallery img {
-    max-width: 100%; /* Set maximum width to prevent images from extending viewport */
+    width: 100%; /* Set maximum width to prevent images from extending viewport */
     height: auto;
     margin: 0px;
     display: block; /* Display images in a row */
