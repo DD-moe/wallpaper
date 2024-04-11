@@ -25,7 +25,7 @@
       // Function to fetch and populate imagesData array from XML
       function loadImagesFromXML() {
         // Replace 'your-xml-url' with the actual URL of your XML file
-        fetch('config.xml')
+        fetch('config.xml', { cache: "reload" })
           .then(response => response.text())
           .then(data => {
             const parser = new DOMParser();

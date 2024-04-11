@@ -81,6 +81,21 @@
     <category>plants</category>
   </photo>   
   <photo>
+    <source>photos/plants/q.jpg</source>
+    <orientation>portrait</orientation>
+    <category>plants</category>
+  </photo>     
+  <photo>
+    <source>photos/plants/r.jpg</source>
+    <orientation>portrait</orientation>
+    <category>plants</category>
+  </photo>  
+  <photo>
+    <source>photos/plants/s.jpg</source>
+    <orientation>portrait</orientation>
+    <category>plants</category>
+  </photo>        
+  <photo>
     <source>photos/animals/a.jpg</source>
     <orientation>landscape</orientation>
     <category>animals</category>
@@ -90,5 +105,10 @@
     <orientation>landscape</orientation>
     <category>animals</category>
   </photo>   
+  <photo>
+    <source>photos/animals/c.jpg</source>
+    <orientation>landscape</orientation>
+    <category>animals</category>
+  </photo>     
   <!-- Add more photo elements as needed -->
 </gallery>
